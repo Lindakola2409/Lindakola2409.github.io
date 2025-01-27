@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linda Tam | Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1{
+            margin: 1px 0;
+            font-size: 4em;
+        }
+        h2{
+            font-weight: bold;
+            font-size: 2em;
+            margin: 1px 0;
+        }
+        h4{
+            font-weight: normal;
+            font-size: 1.5em;
+            margin: 1px 0;
+        }
+        h6{
+            font-weight: normal;
+            margin: 1px 0;
+            font-size: 1em;
+        }
+        #content p{
+            font-size: 1.3em;
+            margin: 1px 0;
+        }
+       strong{
+            text-decoration: underline;
+       }
+       a{
+            text-decoration: none;
+            color: black;
+       }
+       .GameTitle {
+            font-weight: bold;
+            font-size: 2em;
+            margin: 1px 0;
+       }
+       .GameTitle a:hover{
+            text-decoration: none;
+            margin: 1px 0;
+            background-color: #D4F0F7;
+       }
+       .icon{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="nav">
+            <ul class="navItems">
+                <li><a href="Home_Page.html">Home</a></li>
+                <li><a href="Projects.html">Project</a></li>
+                <li><a href="Passions.html">Passions</a>
+                    <ul>
+                        <li><a href="Passions.html#Baking">Baking</a></li>
+                        <li><a href="Passions.html#Computer_Building">Computer Building</a></li>
+                        <li><a href="Passions.html#Coding">Coding</a></li>
+                        <li><a href="Passions.html#Sewing">Sewing</a></li>
+                    </ul>
+                </li>
+                <li><a href="Resume.html">Resume</a></li>
+            </ul>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/linda-tam-usc/" target="_blank"><img class="icon" src="Icons/LinkedIn.png"></a>
+                <a href="https://github.com/Lindakola2409" target="_blank"><img class="icon" src="Icons/Github.png"></a>
+            </div>
+        </div>
+        <div id="content">
+            <div id="Education">
+                <h1>Education</h1>
+                <hr>
+                <h2>University of Southern California, Viterbi School of Engineering</h2>
+                <h4>Bachelors in Computer Science Games & Masters in Computer Science; Expected graduation year: May 2025; GPA: 3.80; Major GPA: 3.925</h4>
+                <h6>Honors: Dean's List</h6>
+                <ul>
+                    <li><p>Courses: Introduction to Algorithm and Theory of Computing, Data Structures and Object-Oriented Design, Introduction to Computer Systems, Principles of Software Development, Advanced Game Design and Production, Applied Python, Video Game Programming, Programming in Unreal, Mobile Game Developement, Fundamentals in Computations, Discrete Methods in Computer Science, Linear Algebra and Linear Differential Equations  </p></li>
+                </ul>
+            </div>
+            <div id="Personal_Projects">
+                <h1>Personal Projects</h1>
+                <hr>
+                <h2>Personal Website</h2>
+                <h4>HTML, CSS</h4>
+                <p>Created a website to showcase my resume and projects</p>
+                <h2><a href="https://lindakola2409.github.io/TamsTreats/index.html" target="_blank">Baking Website</a></h2>
+                <h4>HTML, CSS</h4>
+                <p>Created a website to showcase my baking skills and to practice HTML and CSS</p>
+            </div>
+            <div id="Academic_Projects">
+                <h1>Academic Projects</h1>
+                <hr>
+                <div class="GameTitle"><a href="Pong/Lab01.html" target="_blank">Pong</a></div>
+                <ul>
+                    <li><p>Orchestrated a dynamic and responsive <strong>game loop architecture</strong> that handled input processing, game state updates, and output generation.</p>
+                        
+                    </li>
+                    <li><p> Employed <strong>physics principles</strong> to  craft the ball's motion and manage collision detection.</p>
+                       
+                    </li>
+                    <li>
+                        <p>Crafted <strong>conditional algorithms</strong>, enabling collision detection, ball movement, and responsive paddle behavior.</p>
+                    </li>
+                    <li>
+                        <p>Managed <strong>resource allocation and memory</strong> using pointer techniques, handling elements like windows and renderers, and ensuring efficient deallocation. </p>
+                    </li>
+                </ul>
+                <div class="GameTitle"><a href="Asteroids/Lab02.html" target="_blank">Asteroids</a></div>
+                <ul>
+                    <li>
+                        <p>Created a function that <strong>dynamically generates blocks</strong> as the player progresses through the game and occasionally loads new block configurations</p></li>
+                    <li>
+                       <p>Rendered <strong>health bar and UI animations</strong> by creating a UIComponent</p> </li>
+                    <li>
+                        <p>Designed and implemented a <strong>dynamic game mechanic</strong> allowing shooting a block to trigger a cascading destruction effect among neighboring blocks, utilizing a component-based architecture, recursive algorithms, and dynamic gameplay interactions.</p>
+                    </li>
+                </ul>
+                <div class="GameTitle"><a href="Frogger/Lab03.html" target="_blank">Frogger</a></div>
+                <ul>
+                    <li><p>Loaded levels by parsing in text file inputs</p></li>
+                    <li><p>Implemented <strong>leading edge logic </strong>to prevent spam jumping</p></li>
+                    <li><p>Utilized <strong>dot product analysis</strong> to detect presence of frogs in front of vehicles, triggering automatic slowing mechanism when applicable.</p></li>
+                </ul>
+                <div class="GameTitle"><a href="Mario/Lab04.html" target="_blank">Mario</a></div>
+                <h4>Level Loading, Scrolling Camera, Gravity Simulation, Basic Enemey AI and Spawning</h4>
+                <ul>
+                    <li>
+                        <p>Loaded and displayed game levels from text files, implementing a scrolling camera that centered the player and managed camera movement, considering limitations on camera and player boundaries. Employed acceleration and velocity for realistic gravity simulation and jump mechanics. Designed enemy AI (Goomba) with spawner actors to dynamically spawn enemies based on distance criteria.</p>
+                    </li>
+                </ul>
+                <div class="GameTitle"><a href="Pac-Man/Lab05.html" target="_blank">Pac-Man</a></div>
+                <h4>Enum, Basic AI, Pathfinding Logic, Time-based State Changes, Randomization, Animation Handling </h4>
+                <ul>
+                    <li><p>Used data structures and object-oriented programming by implementing the GhostAI class with <strong>enums</strong> and member variables to handle the ghost's state and movement. The pathfinding logic allowed the ghosts to select the closest neighboring node towards their target node, while adhering to specific rules. Managed <strong>time-based state changes</strong>, transitioning the ghosts between Scatter and Chase states. <strong>Randomization</strong> was employed for the Frightened state, making the ghost randomly choose nodes at intersections. Integrated a custom AudioSystem class,<strong> caching sounds</strong> for efficient playback and implementing functions for sound control. Prioritization was applied to handle channel limits, allowing more important sounds to override less critical ones.</p></li>
+                </ul>
+                <div class="GameTitle"><a href="Zelda/Lab06.html" target="_blank">Zelda</a></div>
+                <h4>Parsing Data, Tile Mapping Technique, A* Algorithm, Memory Management,  Game State Management, Graphics Rendering</h4>
+                <ul>
+                    <li><p>Implemented the loading of levels with tiled backgrounds and enabled basic movement of the player character, Link. Using the <strong>tile mapping technique</strong>, I created a TiledBGComponent to draw tiles based on <strong>parsing CSV data</strong>. Implemented enemy behavior with pathfinding using the <strong>A* algorithm,</strong> and set up <strong>collision detection</strong> for enemies and obstacles. The game featured sword attacks and animations, with enemies having hit points and the ability to take damage and die. Integrated the <strong>AudioSystem</strong> for managing game sounds and music. Utilized <strong>callbacks </strong> with functions and lambda for custom behavior on damage and death events. Effectively used managed data structures such as vectors for storing components and actors.</p></li>
+                </ul>
+                <!-- <h6>WASD to move, space to attack</h6> -->
+                <div class="GameTitle"><a href="StarFoxTunnel/Lab07.html" target="_blank">Star Fox Tunnel</a></div>
+                <ul>
+                    <li>
+                        <p>Created a function that <strong>dynamically generates blocks</strong> as the player progresses through the game and occasionally loads new block configurations</p> </li>
+                    <li>
+                        <p>Rendered <strong>health bar and UI animations</strong> by creating a UIComponent</p></li>
+                    <li>
+                        <p>Designed and implemented a <strong>dynamic game mechanic</strong> allowing shooting a block to trigger a cascading destruction effect among neighboring blocks, utilizing a component-based architecture, recursive algorithms, and dynamic gameplay interactions.</p></li>
+                </ul>
+                <div class="GameTitle"><a href="MarioKart/Lab08.html" target="_blank">Mario Kart</a></div>
+                <h4>Spring camera, Height Map, Cross Product, Euler Integration, Lap and Place tracking</h4>
+                <ul>
+                    <li><p>Implemented a Mario Kart-like game featuring a track, vehicles (karts), and a <strong>spring camera</strong>. Track was represented using a mesh component, and the vehicles had arcade-style physics for acceleration and turning, managed through a custom VehicleMove component. To ensure the karts' height corresponded to the track's elevation, I employed a HeightMap class with <strong>2D grid data</strong> and utilized <strong>cross product</strong> calculations to determine if the the enemy vehicles should turn left or right. <strong>Lap and place tracking</strong> were implemented using checkpoints, and a start timer was added before the race. Included music and sound effects with support for fading in and out.
+                    </p></li>
+                </ul>
+                <div class="GameTitle"><a href="Portal/Lab12.html" target="_blank">Portal</a></div>
+                <h4>Parse Files, Voice Over Triggers, Sentry AI, State Machine, Matrix Calculations</h4>
+                <ul>
+                    <li><p>Parsed json files and used the information to create <strong> Voice Over Triggers </strong> to play voiceover lines, open doors, and load levels</p></li>
+                    <li><p>Implemented <strong>Sentry AI</strong> using a state machine to search for players and fire lasers</p></li>
+                    <li><p>Implemented <strong>Complex Portal View</strong> functionality by creating a CalcViewMatrix function within Portal, utilizing advanced matrix calculations and vector transformations to create perspective changes based on the player's relative position to the portal</p></li>
+                </ul>
+                <!-- <figure id="spinner" style="overflow: visible;">
+                    <div class="spinner"></div>
+                    <center style="margin-top: .5em;"><strong>emscripten</strong></center>
+                </figure>
+                <div class="emscripten" id="status">Downloading...</div>
+                <div class="emscripten">
+                    <progress hidden id="progress" max="100" value="0"></progress>
+                </div>
+                <div class="emscripten_border">
+                    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1"></canvas>
+                </div>
+                <div class="emscripten">
+                    <input type="checkbox" id="resize">Resize canvas
+                    <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
+                    <input type="button" onclick='Module.requestFullscreen(document.getElementById("pointerLock").checked,document.getElementById("resize").checked)' value="Fullscreen">
+                </div>
+                <script>
+                    var statusElement = document.getElementById("status"),
+                        progressElement = document.getElementById("progress"),
+                        spinnerElement = document.getElementById("spinner"),
+                        Module = {
+                            preRun: [],
+                            postRun: [],
+                            print: function () {
+                                var e = document.getElementById("output");
+                                return e && (e.value = ""), function (t) {
+                                    arguments.length > 1 && (t = Array.prototype.slice.call(arguments).join(" "));
+                                    console.log(t);
+                                    e && (e.value += t + "\n", e.scrollTop = e.scrollHeight);
+                                }
+                            }(),
+                            canvas: function () {
+                                var e = document.getElementById("canvas");
+                                e.addEventListener("webglcontextlost", function (e) {
+                                    alert("WebGL context lost. You will need to reload the page.");
+                                    e.preventDefault();
+                                }, !1);
+                                return e;
+                            }(),
+                            setStatus: function (e) {
+                                if (Module.setStatus.last || (Module.setStatus.last = {
+                                    time: Date.now(),
+                                    text: ""
+                                }), e !== Module.setStatus.last.text) {
+                                    var t = e.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/),
+                                        n = Date.now();
+                                    if (t && n - Module.setStatus.last.time < 30) {
+                                        return;
+                                    }
+                                    Module.setStatus.last.time = n;
+                                    Module.setStatus.last.text = e;
+                                    if (t) {
+                                        e = t[1];
+                                        progressElement.value = 100 * parseInt(t[2]);
+                                        progressElement.max = 100 * parseInt(t[4]);
+                                        progressElement.hidden = !1;
+                                        spinnerElement.hidden = !1;
+                                    } else {
+                                        progressElement.value = null;
+                                        progressElement.max = null;
+                                        progressElement.hidden = !0;
+                                        if (!e) {
+                                            spinnerElement.hidden = !0;
+                                        }
+                                    }
+                                    statusElement.innerHTML = e;
+                                }
+                            },
+                            totalDependencies: 0,
+                            monitorRunDependencies: function (e) {
+                                this.totalDependencies = Math.max(this.totalDependencies, e);
+                                Module.setStatus(e ? "Preparing... (" + (this.totalDependencies - e) + "/" + this.totalDependencies + ")" : "All downloads complete.");
+                            }
+                        };
+                    Module.setStatus("Downloading...");
+                    window.onerror = function () {
+                        Module.setStatus("Exception thrown, see JavaScript console");
+                        spinnerElement.style.display = "none";
+                        Module.setStatus = function (e) {
+                            e && console.error("[post-exception status] " + e);
+                        };
+                    }
+                </script>
+                <script async src="Pong/Lab01.js"></script> -->
+                <h2>Graph Path Finder</h2>
+                <ul>
+                    <li><p>Read from a user-generated graph file and used recursive backtracking to generate and output all possible
+                    paths from one node to another into a file</p></li>
+                </ul>
+                <h2>Hash Table</h2>
+                <ul>
+                    <li><p>Utilized ideas of linear probing, quadratic probing, and open address hashing using the properties of prime numbers
+                        to resize our hash table after the loading factor reaches 0.5 to decrease the chances of a collision</p></li>
+                </ul>
+                <h2>AVL Tree</h2>
+                <ul>
+                    <li><p>Constructed a templated data structure inherited from a balanced binary tree, built from scratch, using ideas of
+                        dynamic allocation and tree rotations that supports insertion, find, and remove</p></li>
+                </ul>
+                <h2>Twitter Engine</h2>
+                <ul>
+                    <li><p>Created a mock Twitter engine using polymorphism, inheritance, list, sets, maps, and FS streams that takes in
+                        a user input or file and outputs a Twitter feed including a list of people’s user followers, their followers, and their tweets in a
+                        chronological order</p></li>
+                </ul>
+                <h2>Huffman Compression</h2>
+                <ul>
+                    <li><p>Built a templated heap from scratch and applied it to compress input files and decompress files into an
+                        output file using the idea of Huffman Compression</p></li>
+                </ul>
+
+            </div>
+            <div id="Experience">
+                <h1>Experience</h1>
+                <hr>
+                <h2>University of Southern California</h2>
+                <h4>Teacher's Assistant for Introduction to Web Development Class</h4>
+                <ul>
+                    <li>
+                        Assisting students in Information Technology Programs department (Intro to Web Development) with homework
+                    </li>
+                    <li>
+                        Grading 9 students' assignments and labs, error checking code, providing constructive feedback, and answering any questions
+                    </li>
+                </ul>
+                <h2>University of Southern California</h2>
+                <h4>Course Producer for Data Structures and Object Oriented Design Class</h4>
+                <ul>
+                    <li>
+                        Supported students in gaining knowledge of data structures and the intricacies of object-oriented design through the facilitation of office hours, guidance with assignments, and active involvement in lab sessions
+                    </li>
+                    <li>
+                        Evaluated assignments and lab work for a cohort of more than 40 students, checking code for errors, delivered insightful feedback, and addressed queries with proficiency
+                    </li>
+                </ul>
+                <h2>Half Baked Co.</h2>
+                <h4>Cake Decorator</h4>
+                <ul>
+                    <li>
+                        Specializing in making desserts for people with dietary restrictions such as vegan, gluten-free, and nut free
+                    </li>
+                    <li>
+                        Hand-made and hand-piped over 200 cookies for the hit T.V. Show Wipeout and over 100 cakes that varied in flavorings, designs, and food restrictions
+                    </li>
+                    <li>
+                        Trained 4 interns, taught them the signature decorating techniques and how to interact with customers
+                    </li>
+                </ul>
+            </div>
+            <div id="Leadership">
+                <h1>Leadership</h1>
+                <hr>
+                <h2>USC Association for Computing Machinery</h2>
+                <h4>Social Media Manager and Graphic Designer</h4>
+                <ul>
+                    <li>Hosted a resume workshop with over 100+ attendees and reviewed over 20 resumes providing feedback and advice
+                    </li>
+                    <li>Collaborating with a team of 16 to host events such as research fairs, resume workshops, leetcode workshops, and hackathons
+                    </li>
+                    <li>Creating eye-catching graphics for use on our Instagram and keeping our 916 followers updated about biweekly events by consistently posting and sending out announcements weekly.
+                    </li>
+                </ul>   
+                <h2>USC Delta Phi Kappa </h2>
+                <h4>Web Mistress </h4>
+                <ul>
+                    <li>
+                        Updating 840 Instagram followers about Rush Events, member spotlights, and organizing birthday posts for 33 members
+                    </li>
+                    <li>
+                        Redesigned our website for our new rush theme, sugar rush, which included updating members' pictures and descriptions
+                    </li>
+                </ul>
+            </div>
+            <div id="Skill_and_Intrests">
+                <h1>Skill and Intrests</h1>
+                <hr>
+                <ul>
+                    <li>
+                        Languages: C++, Java, HTML, CSS, Swift
+                    </li>
+                    <li>
+                        Tools: Visual Studio Code, Docker, Visual Studio, Eclipse, Github
+                    </li>
+                    <li>
+                        Interests: Web Design, Cake and Sugar Cookie Decorating, Building Computers, Sewing, Ice Skating, and Video Games
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
